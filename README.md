@@ -18,7 +18,11 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-[![Watch the demo]()](/demo.mov)
+![Alt text](/assets/index.png)
+
+![Alt text](/assets/user.png)
+
+[![Watch the demo]](/demo.mov)
 
 
 

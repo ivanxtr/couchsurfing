@@ -1,0 +1,30 @@
+{
+	"info": {
+		"_postman_id": "fd11815e-80df-49ba-b7bd-627f60bff054",
+		"name": "CoachSurfing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5817691"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/api/users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

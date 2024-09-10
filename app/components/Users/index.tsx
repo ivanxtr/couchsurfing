@@ -1,21 +1,17 @@
-'use client'
-
 import React from 'react'
 import Image from 'next/image'
-import { useRouter } from 'next/navigation'
+import Link from 'next/link'
 
 import { UserTypes } from '../../types'
 
 const Users = ({ data }: { data: UserTypes[] }) => {
-  const router = useRouter()
-
   return (
     <React.Fragment>
       {data.map((user: UserTypes) => (
-        <div
+        <Link
           key={user.id}
-          onClick={() => router.push(`/user/${user.id}`)}
           className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 w-72 h-72 py-14 mx-2 mt-4 cursor-pointer"
+          href={`/user/${user.id}`}
         >
           <div className="flex flex-col items-center pb-10">
             <Image
@@ -38,7 +34,7 @@ const Users = ({ data }: { data: UserTypes[] }) => {
               {user.company.name}
             </span>
           </div>
-        </div>
+        </Link>
       ))}
     </React.Fragment>
   )

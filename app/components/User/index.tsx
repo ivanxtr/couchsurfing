@@ -39,8 +39,8 @@ const User = ({ user }: { user: UserTypes }) => (
         <hr className="mt-6" />
         <h3 className="font-medium dark:text-black py-1 px-4">Connections</h3>
         {user.friendship &&
-          user.friendship.map((friend) => (
-            <div>
+          user.friendship.map((friend, idx) => (
+            <div key={idx}>
               <div className="flex items-center gap-4 py-1 px-4">
                 <Image
                   className="w-10 h-10 rounded-full"

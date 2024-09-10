@@ -5,7 +5,7 @@ export function GET(req: Request, { params }: { params: { id: string } }) {
   if (params.id) {
     const user = users.find((user) => user.id === parseInt(params.id))
     if (user) {
-      let friends: { id: number; name: string }[] = []
+      const friends: { id: number; name: string }[] = []
       user.friendship.map((id: number) => {
         friends.push({
           id,
